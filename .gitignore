@@ -1,16 +1,19 @@
-# output dir
-output
-instant_test_output
-inference_test_output
+# Exclude LV-MHP-v2
+/LV-MHP-v2/
 
+# Output directories
+/output
+/instant_test_output
+/inference_test_output
 
+# Ignore image and annotation files
 *.png
 *.json
 *.diff
 *.jpg
 !/projects/DensePose/doc/images/*.jpg
 
-# compilation and distribution
+# Compilation and distribution
 __pycache__
 _ext
 *.pyc
@@ -22,14 +25,14 @@ build/
 dist/
 wheels/
 
-# pytorch/python/numpy formats
+# PyTorch/Python/Numpy formats
 *.pth
 *.pkl
 *.npy
 *.ts
 model_ts*.txt
 
-# ipython/jupyter notebooks
+# IPython/Jupyter Notebooks
 *.ipynb
 **/.ipynb_checkpoints/
 
@@ -39,17 +42,15 @@ model_ts*.txt
 *.swp
 *~
 
-# editor settings
+# Editor settings
 .idea
 .vscode
 _darcs
 
-# project dirs
-/LV-MHP-v2/*
+# Project directories
 /detectron2/model_zoo/configs
 /datasets/*
 !/datasets/*.*
 /projects/*/datasets
 /models
 /snippet
-
